@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuscam task</title>
+
+    <!--bootstrap link  -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- fontawesome link -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- main container -->
+
+    <main>
+
+
+        <div class="sidenav">
+            <div class="logo">
+                <img src="./assets/images/logo.png" alt="logo">
+                Educkart
+            </div>
+
+            <aside class="nav-list" id="sidebar">
+                <ul>
+                    <li class="navMenus">
+
+                        <a href="#">
+                            <i class="fa-solid fa-table-columns"></i> Dashboard
+                        </a>
+                    </li>
+
+                    <li class="navMenu">
+                        <a href="#" class="collapsed" data-bs-toggle="collapse" data-bs-target="#student"
+                            aria-expanded="false" aria-controls="student">
+                            <i class="fa-solid fa-graduation-cap"></i> Students
+                        </a>
+                        <ul id="student" class="collapse sidebar-dropdown  list-unstyled" data-bs-parent="#sidebar">
+                            <li class="second-list"><a href="#">test 1</a></li>
+                            <li class="second-list"><a href="#">test 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="navMenu">
+                        <a href="#" class="collapsed" data-bs-toggle="collapse" data-bs-target="#teacher"
+                            aria-expanded="false" aria-controls="teacher">
+                            <i class="fa-solid fa-person-chalkboard"></i> Teachers
+                        </a>
+                        <ul id="teacher" class="collapse sidebar-dropdown  list-unstyled" data-bs-parent="#sidebar">
+                            <li class="second-list"><a href="#">test 1</a></li>
+                            <li class="second-list"><a href="#">test 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="navMenu">
+                        <a href="#" class="collapsed" data-bs-toggle="collapse" data-bs-target="#class"
+                            aria-expanded="false" aria-controls="class">
+                            <i class="fa-solid fa-person-booth"></i> Class
+                        </a>
+                        <ul id="class" class="collapse sidebar-dropdown  list-unstyled" data-bs-parent="#sidebar">
+                            <li class="second-list"><a href="#">test 1</a></li>
+                            <li class="second-list"><a href="#">test 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="navMenu">
+                        <a href="#" class="collapsed" data-bs-toggle="collapse" data-bs-target="#attendance"
+                            aria-expanded="false" aria-controls="attendance">
+                            <i class="fa-regular fa-calendar-days"></i> Attendance
+                        </a>
+                        <ul id="attendance" class="collapse sidebar-dropdown  list-unstyled" data-bs-parent="#sidebar">
+                            <li class="second-list"><a href="#">test 1</a></li>
+                            <li class="second-list"><a href="#">test 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="navMenu">
+                        <a href="#" class="collapsed" data-bs-toggle="collapse" data-bs-target="#examination"
+                            aria-expanded="false" aria-controls="examination">
+                            <i class="fa-solid fa-clipboard-list"></i>Examination
+                        </a>
+                        <ul id="examination" class="collapse sidebar-dropdown  list-unstyled" data-bs-parent="#sidebar">
+                            <li class="second-list"><a href="#">test 1</a></li>
+                            <li class="second-list"><a href="#">test 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="navMenu">
+                        <a href="#" class="collapsed" data-bs-toggle="collapse" data-bs-target="#payment"
+                            aria-expanded="false" aria-controls="payment">
+                            <i class="fa-solid fa-file-invoice-dollar"></i> Payment
+                        </a>
+                        <ul id="payment" class="collapse sidebar-dropdown  list-unstyled" data-bs-parent="#sidebar">
+                            <li class="second-list"><a href="#">test 1</a></li>
+                            <li class="second-list"><a href="#">test 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="navMenu">
+                        <a href="#" class="collapsed" data-bs-toggle="collapse" data-bs-target="#expanses"
+                            aria-expanded="false" aria-controls="expanses">
+                            <i class="fa-solid fa-file-invoice"></i> Expanses
+                        </a>
+                        <ul id="expanses" class="collapse sidebar-dropdown  list-unstyled" data-bs-parent="#sidebar">
+                            <li class="second-list"><a href="#">test 1</a></li>
+                            <li class="second-list"><a href="#">test 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+
+            <div class="logout px-2 fs-5">
+                <a href="">
+                    <i class="fa-solid fa-arrow-right-from-bracket pe-2"></i>Logout
+                </a>
+            </div>
+
+
+
+
+        </div>
+
+
+
+        <!-- second page -->
+        <div class="main-content">
+            <div class="top-bar">
+                <div class="input">
+                    <input type="text" placeholder="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <a href=""> <i class="fa-solid fa-envelope"></i></a>
+                <a href="">
+                    <i class="fa-solid fa-bell"></i>
+                </a>
+                <a href="">
+                    <img src="./assets/images/profile.png" alt="profile">
+                </a>
+            </div>
+
+            <!-- second-main-part -->
+
+            <div class="second-main-part">
+                <div class="section-title d-flex align-items-center my-2">
+                    <img src="./assets/images/menu.png" alt="profile">
+                    <h4>Dashboard</h4>
+                </div>
+
+                <div class="nav-list-menu">
+                    <ul>
+                        <li><a href="" class="active-nav">Today</a></li>
+                        <li><a href="">Overall Status </a></li>
+                        <li><a href="">Task</a></li>
+                        <li><a href="">expanses CS</a></li>
+                        <li><a href="">IAMT Status</a></li>
+                        <li><a href="">Transport</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex align-items-center justify-content-between w-100">
+                    <p class="my-2 progress-text">Today Progress</p>
+                    <select name="" id="">
+                        <option value="27 Aug 2023">27 Aug, 2023</option>
+                        <option value="27 Aug 2023">26 Aug, 2023</option>
+                        <option value="27 Aug 2023">25 Aug, 2023</option>
+                        <option value="27 Aug 2023">24 Aug, 2023</option>
+                        <option value="27 Aug 2023">23 Aug, 2023</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <!-- main postion -->
+
+            <div class="container-fluid">
+                <div class="row py-4">
+                    <div class="col-md-6">
+                        <!-- first-notfi -->
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="box">
+                                    <div class="f-line d-flex align-items-center justify-content-between px-2">
+                                        <div class="">
+                                            <small>Students</small>
+                                            <h5>1500</h5>
+                                        </div>
+                                        <div class="box-img">
+                                            <img src="./assets/images/img-1.svg" alt="student-img">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center px-2">
+                                        <div class="px-2">
+                                            <small>Male</small>
+                                            <h6>750+</h6>
+                                        </div>
+                                        <div class="px-2">
+                                            <small>Female</small>
+                                            <h6>750+</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="box">
+                                    <div class="f-line d-flex align-items-center justify-content-between px-2">
+                                        <div class="">
+                                            <small>Teachers</small>
+                                            <h5>100</h5>
+                                        </div>
+                                        <div class="box-img">
+                                            <img src="./assets/images/img-2.svg" alt="student-img">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center px-2">
+                                        <div class="px-2">
+                                            <small>Male</small>
+                                            <h6>70+</h6>
+                                        </div>
+                                        <div class="px-2">
+                                            <small>Female</small>
+                                            <h6>30+</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="box-2">
+                                    <div class="f-line d-flex align-items-center justify-content-between w-100 p-1">
+                                        <div class="">
+                                            <small>Class/Section</small>
+                                            <h6>31/29</h6>
+                                        </div>
+                                        <div class="box-2-img">
+                                            <img src="./assets/images/img-3.svg" alt="student-img">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="box-2">
+                                    <div class="f-line d-flex align-items-center w-100 justify-content-between p-1">
+                                        <div class="">
+                                            <small>RET</small>
+                                            <h6>50</h6>
+                                        </div>
+                                        <div class="box-2-img">
+                                            <img src="./assets/images/img-4.svg" alt="student-img">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="box-2">
+                                    <div class="f-line d-flex align-items-center justify-content-between w-100 p-1">
+                                        <div class="">
+                                            <small>Total Fees Collection</small>
+                                            <h6>75,000</h6>
+                                        </div>
+                                        <div class="box-2-img">
+                                            <img src="./assets/images/img-5.svg" alt="student-img">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="box-2">
+                                    <div class="f-line d-flex align-items-center w-100 justify-content-between p-1">
+                                        <div class="">
+                                            <small>Total Expanses</small>
+                                            <h6>15,000</h6>
+                                        </div>
+                                        <div class="box-2-img">
+                                            <img src="./assets/images/img-6.svg" alt="student-img">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- chart -->
+                        <div class="map">
+                            <span>Fees Collection</span>
+                            <div class="d-flex ">
+                                <div class="mb-2 me-3 amount">
+                                    <small>Today Offline</small><br>
+                                    <span class="text-amount">15,000</span>
+                                </div>
+                                <div class="mb-2 amount">
+                                    <small>Today Online</small><br>
+                                    <span class="text-amount2">10,000</span>
+                                </div>
+                            </div>
+                            <canvas id="line-chart" width="600" height="160"></canvas>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="second-calandar">
+                            <div class="calendar-wrapper">
+                                <div class="row p-2">
+                                    <div class="col-md-3">
+                                        <h6>calendar</h6>
+                                    </div>
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <button id="btnPrev" class="btns" type="button"><i
+                                                        class="fa-solid fa-arrow-left"></i></button>
+                                            </div>
+                                            <div class="col-6">
+                                                <button id="btnNext" class="btns" type="button"><i
+                                                        class="fa-solid fa-arrow-right"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="divCal"></div>
+                            </div>
+
+                        </div>
+
+                        <!-- wave chart -->
+
+                        <div class="wave-chart">
+                            <div class="top-bar-chart">
+                                <span class="exp">Expanses</span>
+                                <select name="" id="">
+                                    <option value="">Month</option>
+                                </select>
+                            </div>
+                            <div class="d-flex">
+                                <div class="mb-2 me-3 amount2">
+                                    <small>Expanses</small><br>
+                                    <span class="amunt text-amount-1">15,000</span>
+                                </div>
+                                <div class="mb-2 me-3 amount2">
+                                    <small>Allowance</small><br>
+                                    <span class="amunt text-amount-2">15,000</span>
+                                </div>
+                                <div class=" amount2">
+                                    <small>Transport</small><br>
+                                    <span class="amunt text-amount-3">8000</span>
+                                </div>
+                            </div>
+                            <canvas id="myChart" style="width:100%; height: 28vh;"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- third -->
+                    <div class="col-md-3">
+                        <div class="third">
+                            <h5>Notice Board</h5>
+
+                            <div class="content-third">
+                                <span class="board board-1">16 Aug 2023</span><br>
+                                <span class="child-1">Great School manag mene esom text of the printing. </span><br>
+                                <small>Head office /5 min ago</small>
+                            </div>
+
+                            <div class="content-third">
+                                <span class="board board-2">16 Aug 2023</span><br>
+                                <span class="child-1">Great School manag mene esom text of the printing. </span><br>
+                                <small>Head office /5 min ago</small>
+                            </div>
+
+                            <div class="content-third">
+                                <span class="board board-3">16 Aug 2023</span><br>
+                                <span class="child-1">Great School manag mene esom text of the printing. </span><br>
+                                <small>Head office /5 min ago</small>
+                            </div>
+
+                            <div class="content-third">
+                                <span class="board board-4">16 Aug 2023</span><br>
+                                <span class="child-1">Great School manag mene esom text of the printing. </span><br>
+                                <small>Head office /5 min ago</small>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+
+    <!-- script link -->
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <script>
+        let ctx = document.getElementById("line-chart").getContext('2d');
+
+        var gradientStroke = ctx.createLinearGradient(500, 0, 100, 0);
+        gradientStroke.addColorStop(0, "#8956F8");
+        gradientStroke.addColorStop(1, "#8956F8");
+
+        var gradientBkgrd = ctx.createLinearGradient(0, 100, 0, 400);
+        gradientBkgrd.addColorStop(0, "rgba(244,94,132,0.2)");
+        gradientBkgrd.addColorStop(1, "rgba(249,135,94,0)");
+
+        let draw = Chart.controllers.line.prototype.draw;
+        Chart.controllers.line = Chart.controllers.line.extend({
+            draw: function () {
+                draw.apply(this, arguments);
+                let ctx = this.chart.chart.ctx;
+                let _stroke = ctx.stroke;
+                ctx.stroke = function () {
+                    ctx.save();
+                    //ctx.shadowColor = 'rgba(244,94,132,0.8)';
+                    ctx.shadowBlur = 8;
+                    ctx.shadowOffsetX = 0;
+                    ctx.shadowOffsetY = 6;
+                    _stroke.apply(this, arguments)
+                    ctx.restore();
+                }
+            }
+        });
+
+
+
+
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'line',
+
+            // The data for our dataset
+            data: {
+                labels: ["MON", "TUE", "WED", "THU", "FRI", "SAT", ""],
+                datasets: [
+                    {
+                        label: 'Line 1',
+                        borderColor: '#5b47c3',
+                        // backgroundColor:'#5b47c3',
+                        data: [5000, 6000, 10000, 20000, 10000, 8000, 10000, 15000],
+                        fill: true
+                    },
+                    {
+                        label: 'Line 2',
+                        borderColor: '#e7b787',
+                        // backgroundColor:'#e7b787',
+                        data: [10000, 15000, 20000, 10000, 8000, 10000, 18000],
+                        fill: true
+                    },
+                ]
+            },
+
+            // Configuration options go here
+            options: {
+                tooltips: {
+                    backgroundColor: '#fff',
+                    displayColors: false,
+                    titleFontColor: '#000',
+                    bodyFontColor: '#000'
+
+                },
+                legend: {
+                    display: false
+                },
+                scales: {
+                    xAxes: [{
+                        gridLines: {
+                            display: false
+                        }
+                    }],
+                    yAxes: [{
+                        ticks: {
+                            // Include a dollar sign in the ticks
+                            callback: function (value, index, values) {
+                                return (value / 1000) + 'K';
+                            }
+                        }
+                    }],
+                }
+            }
+        });
+    </script>
+
+    <script>
+        var xValues = ["", "", ""];
+        var yValues = [22000, 18000, 15000, 0];
+        var barColors = [" #5c44d9", "#a79aec", "#ffc928", ""];
+
+        new Chart("myChart", {
+            type: "bar",
+            data: {
+                labels: xValues,
+                datasets: [{
+                    backgroundColor: barColors,
+                    data: yValues,
+                    barThickness: 20
+                }]
+            },
+            options: {
+
+                legend: { display: false },
+                scales: {
+                    xAxes: [{
+                        gridLines: {
+                            display: false
+                        }
+                    }],
+                    yAxes: [{
+                        ticks: {
+                            // Include a dollar sign in the ticks
+                            callback: function (value, index, values) {
+                                return (value / 1000) + 'K';
+                            }
+                        }
+                    }],
+                },
+                title: {
+                    display: true,
+
+                }
+            }
+        });
+    </script>
+
+
+
+</body>
+
+</html>
