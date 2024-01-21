@@ -411,7 +411,6 @@
     <script src="./assets/js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
     <script>
         let ctx = document.getElementById("line-chart").getContext('2d');
 
@@ -431,7 +430,6 @@
                 let _stroke = ctx.stroke;
                 ctx.stroke = function () {
                     ctx.save();
-                    //ctx.shadowColor = 'rgba(244,94,132,0.8)';
                     ctx.shadowBlur = 8;
                     ctx.shadowOffsetX = 0;
                     ctx.shadowOffsetY = 6;
@@ -445,24 +443,20 @@
 
 
         var chart = new Chart(ctx, {
-            // The type of chart we want to create
             type: 'line',
 
-            // The data for our dataset
             data: {
                 labels: ["MON", "TUE", "WED", "THU", "FRI", "SAT", ""],
                 datasets: [
                     {
                         label: 'Line 1',
                         borderColor: '#5b47c3',
-                        // backgroundColor:'#5b47c3',
                         data: [5000, 6000, 10000, 20000, 10000, 8000, 10000, 15000],
                         fill: true
                     },
                     {
                         label: 'Line 2',
                         borderColor: '#e7b787',
-                        // backgroundColor:'#e7b787',
                         data: [10000, 15000, 20000, 10000, 8000, 10000, 18000],
                         fill: true
                     },
@@ -489,7 +483,6 @@
                     }],
                     yAxes: [{
                         ticks: {
-                            // Include a dollar sign in the ticks
                             callback: function (value, index, values) {
                                 return (value / 1000) + 'K';
                             }
@@ -526,7 +519,6 @@
                     }],
                     yAxes: [{
                         ticks: {
-                            // Include a dollar sign in the ticks
                             callback: function (value, index, values) {
                                 return (value / 1000) + 'K';
                             }
